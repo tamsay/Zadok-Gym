@@ -1,0 +1,36 @@
+body{
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+}
+.programme {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+.programme > div {
+    background-color: white;
+    padding: 10px;
+}
+.programme img {
+    width: 100%;
+}
+h1{
+    color: white;
+    font-weight: bolder;
+    padding-top: 50px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(1fr, 1fr, 2fr, 1fr);
+}
+footer{
+    color: white;
+    font-weight: bolder;
+}
