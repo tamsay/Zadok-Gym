@@ -11,10 +11,6 @@ let boxing = document.querySelector('#boxing');
 let basketball = document.querySelector('#basketball');
 let cycling = document.querySelector('#cycling') ;
 
-// let detailsDiv = document.createElement('div')
-//     // detailsDiv.className = 'detailsDiv'
-//     detailsDiv.style.display = 'none'
-
 let createSportGrid =(array)=>{
     for(x=0; x < array.length; x++){
         displayDiv.appendChild(array[x]);
@@ -36,39 +32,53 @@ let displaySport=()=>{
 }
 search.addEventListener('input' , displaySport)
 
-let danceCount = 0;
+let danceDetails = document.createElement('div')
+    danceDetails.className = 'detailsDiv'
+    danceDetails.style.display = 'none'
+
 dance.addEventListener('click', ()=>{
-    let details = document.createElement('div')
-    details.id = 'danceDetailsDiv'
-    let detailsDiv = document.querySelector('#danceDetailsDiv')
-    // detailsDiv.className = 'detailsDiv'
-    // detailsDiv.style.display = 'none'
-    detailsDiv.innerText = 'dance is an aerobic exercise good for your body'
+    danceDetails.innerText = 'Dance is an aerobic exercise good for your body'
 
-    if(danceCount%2 === 0){
-        detailsDiv.style.display = 'block'
-        dance.appendChild(detailsDiv)
-        danceCount++;
+    if(danceDetails.style.display === 'none'){
+        danceDetails.style.display = 'block'
+        dance.appendChild(danceDetails)
     }
     else{
-       // detailsDiv.style.display = 'none'
-         detailsDiv.innerText = ''
-        danceCount++;
+        danceDetails.style.display = 'none'
     }
 })
 
-let badmintonCount = 0;
+let badmintonDetails = document.createElement('div')
+    badmintonDetails.className = 'detailsDiv'
+    badmintonDetails.style.display = 'none'
+
 badminton.addEventListener('click', ()=>{
-    if(badmintonCount%2 === 0){
-        detailsDiv.innerText = 'badminton is an aerobic exercise good for your body'
-        detailsDiv.style.display = 'block'
-        badminton.appendChild(detailsDiv)
-        badmintonCount++;
+    badmintonDetails.innerText = 'Badminton is an aerobic exercise good for your body'
+
+    if(badmintonDetails.style.display === 'none'){
+        badmintonDetails.style.display = 'block'
+        badminton.appendChild(badmintonDetails)
     }
     else{
-        detailsDiv.style.display = 'none'
-        detailsDiv.innerText = ''
-        badminton.appendChild(detailsDiv)
-        badmintonCount++;
+        badmintonDetails.style.display = 'none'
     }
 })
+
+let tableTennisDetails = document.createElement('div')
+    tableTennisDetails.className = 'detailsDiv'
+    tableTennisDetails.style.display = 'none'
+
+tableTennis.addEventListener('click', ()=>{
+    tableTennisDetails.innerText = 'Table-tennis is an aerobic exercise good for your body'
+
+    if(tableTennisDetails.style.display === 'none'){
+        tableTennisDetails.style.display = 'block'
+        tableTennis.appendChild(tableTennisDetails)
+    }
+    else{
+        tableTennisDetails.style.display = 'none'
+    }
+})
+
+
+

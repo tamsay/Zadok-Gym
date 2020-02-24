@@ -38,3 +38,10 @@ footer{
     background-color: greenyellow;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.detailsDiv{
+    background-color: rgb(28, 208, 240);
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 120%;
+}
