@@ -33,6 +33,7 @@ h1{
 footer{
     color: white;
     font-weight: bolder;
+    background-color: rgb(97, 205, 238);
 }
 #contactUs{
     background-color: greenyellow;
@@ -44,4 +45,9 @@ footer{
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 120%;
+}
+.icon{
+    width: 3%;
+    height: 3%;
+    margin: 10px;
 }
