@@ -1,5 +1,5 @@
 let search = document.querySelector('#search');
-let sportList = document.querySelectorAll('#programmeGrid div');
+let sportList = document.querySelectorAll('#programmeGrid div p');
 let displayDiv = document.querySelector('#programmeGrid');
 let dance = document.querySelector('#dance');
 let badminton = document.querySelector('#badminton');
@@ -25,7 +25,7 @@ let displaySport=()=>{
     [...sportList].map(element=>{
         
         if (element.textContent.toLowerCase().includes(input.toLowerCase())){
-            filteredArray.push(element);
+            filteredArray.push(element.parentElement);
         }
     })
     createSportGrid(filteredArray);
@@ -38,6 +38,7 @@ let danceDetails = document.createElement('div')
 
 dance.addEventListener('click', ()=>{
     danceDetails.innerText = 'Dance is an aerobic exercise good for your body'
+    danceDetails.style.textAlign = 'center'
 
     if(danceDetails.style.display === 'none'){
         danceDetails.style.display = 'block'
@@ -54,6 +55,7 @@ let badmintonDetails = document.createElement('div')
 
 badminton.addEventListener('click', ()=>{
     badmintonDetails.innerText = 'Badminton is an aerobic exercise good for your body'
+    badmintonDetails.style.textAlign = 'center'
 
     if(badmintonDetails.style.display === 'none'){
         badmintonDetails.style.display = 'block'
@@ -70,6 +72,7 @@ let tableTennisDetails = document.createElement('div')
 
 tableTennis.addEventListener('click', ()=>{
     tableTennisDetails.innerText = 'Table-tennis is an aerobic exercise good for your body'
+    tableTennisDetails.style.textAlign = 'center'
 
     if(tableTennisDetails.style.display === 'none'){
         tableTennisDetails.style.display = 'block'

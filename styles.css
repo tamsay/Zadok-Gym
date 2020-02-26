@@ -1,4 +1,5 @@
 body{
+    padding-top: 10px;
     background-color: rgba(0, 0, 0, 1);
     text-align: center;
 }
@@ -6,19 +7,24 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
+    text-align: left;
 }
 
 .programme > div {
-    background-color: white;
+    /* background-color: white; */
     padding: 10px;
 }
 .programme img {
     width: 100%;
+    margin: 0px 0px;
+    padding: 0px;
+    height: 240px;
 }
 h1{
     color: white;
     font-weight: bolder;
     padding-top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .sticky {
     position: fixed;
@@ -31,13 +37,25 @@ h1{
     grid-template-rows: repeat(1fr, 1fr, 2fr, 1fr);
 }
 footer{
-    color: white;
+    display: flex;
+    /* color: white; */
+    justify-content: space-around;
+    align-items: center;
     font-weight: bolder;
+    padding: 10px;
+    margin: 0px;
     background-color: rgb(97, 205, 238);
 }
+footer > p{
+    padding: 0px;
+    margin: 0px;
+}
 #contactUs{
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    color: white;
+    padding: 10px;
 }
 .detailsDiv{
     background-color: rgb(28, 208, 240);
@@ -47,7 +65,16 @@ footer{
     font-size: 120%;
 }
 .icon{
-    width: 3%;
-    height: 3%;
+    width: 2em;
+    height: 2em;
     margin: 10px;
+}
+#programmeGrid div p{
+    margin: 0px;
+    padding: 5px;
+    background-color: rgb(162, 237, 240);
+    width: fit-content;
+    font-weight: bold;
+    border-radius: 0px 10px 0px 0px;
+    
 }
