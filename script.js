@@ -10,12 +10,22 @@ let karate = document.querySelector('#karate');
 let boxing = document.querySelector('#boxing');
 let basketball = document.querySelector('#basketball');
 let cycling = document.querySelector('#cycling') ;
+let heading = document.querySelector('#home');
 
 let createSportGrid =(array)=>{
     for(x=0; x < array.length; x++){
         displayDiv.appendChild(array[x]);
     }
 }
+
+let randomColor =()=>{
+    let color = `#${(Math.ceil(Math.random()*16777215)).toString(16)}`
+    console.log(color)
+    return color;
+}
+setInterval(() => {
+    heading.style.color = randomColor();
+}, 5000);
 
 let displaySport=()=>{
     displayDiv.innerText = "";
