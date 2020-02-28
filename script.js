@@ -20,9 +20,9 @@ let createSportGrid =(array)=>{
 
 let randomColor =()=>{
     let color = `#${(Math.ceil(Math.random()*16777215)).toString(16)}`
-    console.log(color)
     return color;
 }
+
 setInterval(() => {
     heading.style.color = randomColor();
 }, 5000);
