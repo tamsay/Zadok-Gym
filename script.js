@@ -12,6 +12,8 @@ let basketball = document.querySelector('#basketball');
 let cycling = document.querySelector('#cycling') ;
 let heading = document.querySelector('#home');
 
+
+
 let createSportGrid =(array)=>{
     for(x=0; x < array.length; x++){
         displayDiv.appendChild(array[x]);
@@ -57,6 +59,23 @@ dance.addEventListener('click', ()=>{
     else{
         danceDetails.style.display = 'none'
     }
+})
+
+let sportDetails =()=>{
+    danceDetails.innerText = 'Dance is an aerobic exercise good for your body'
+    danceDetails.style.textAlign = 'center'
+
+    if(danceDetails.style.display === 'none'){
+        danceDetails.style.display = 'block'
+        dance.appendChild(danceDetails)
+    }
+    else{
+        danceDetails.style.display = 'none'
+    }
+}
+let danceLink = document.querySelector("a[href='#dance']")
+danceLink.addEventListener('click',()=>{
+    sportDetails();
 })
 
 let badmintonDetails = document.createElement('div')
