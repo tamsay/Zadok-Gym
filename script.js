@@ -12,8 +12,6 @@ let basketball = document.querySelector('#basketball');
 let cycling = document.querySelector('#cycling') ;
 let heading = document.querySelector('#home');
 
-
-
 let createSportGrid =(array)=>{
     for(x=0; x < array.length; x++){
         displayDiv.appendChild(array[x]);
@@ -48,41 +46,33 @@ let danceDetails = document.createElement('div')
     danceDetails.className = 'detailsDiv'
     danceDetails.style.display = 'none'
 
+let danceFunction =()=>{
+        danceDetails.innerText = 'Dance is an aerobic exercise good for your body'
+        danceDetails.style.textAlign = 'center'
+    
+        if(danceDetails.style.display === 'none'){
+            danceDetails.style.display = 'block'
+            dance.appendChild(danceDetails)
+        }
+        else{
+            danceDetails.style.display = 'none'
+        } 
+};
+
 dance.addEventListener('click', ()=>{
-    danceDetails.innerText = 'Dance is an aerobic exercise good for your body'
-    danceDetails.style.textAlign = 'center'
+    danceFunction()
+});
 
-    if(danceDetails.style.display === 'none'){
-        danceDetails.style.display = 'block'
-        dance.appendChild(danceDetails)
-    }
-    else{
-        danceDetails.style.display = 'none'
-    }
-})
-
-let sportDetails =()=>{
-    danceDetails.innerText = 'Dance is an aerobic exercise good for your body'
-    danceDetails.style.textAlign = 'center'
-
-    if(danceDetails.style.display === 'none'){
-        danceDetails.style.display = 'block'
-        dance.appendChild(danceDetails)
-    }
-    else{
-        danceDetails.style.display = 'none'
-    }
-}
 let danceLink = document.querySelector("a[href='#dance']")
 danceLink.addEventListener('click',()=>{
-    sportDetails();
+    danceFunction();
 })
 
 let badmintonDetails = document.createElement('div')
     badmintonDetails.className = 'detailsDiv'
     badmintonDetails.style.display = 'none'
 
-badminton.addEventListener('click', ()=>{
+let badmintonFunction =()=>{
     badmintonDetails.innerText = 'Badminton is an aerobic exercise good for your body'
     badmintonDetails.style.textAlign = 'center'
 
@@ -93,13 +83,21 @@ badminton.addEventListener('click', ()=>{
     else{
         badmintonDetails.style.display = 'none'
     }
+}
+badminton.addEventListener('click', ()=>{
+    badmintonFunction();
+})
+
+let badmintonLink = document.querySelector("a[href='#badminton']")
+badmintonLink.addEventListener('click',()=>{
+    badmintonFunction();
 })
 
 let tableTennisDetails = document.createElement('div')
     tableTennisDetails.className = 'detailsDiv'
     tableTennisDetails.style.display = 'none'
 
-tableTennis.addEventListener('click', ()=>{
+let tableTennisFunction=()=>{
     tableTennisDetails.innerText = 'Table-tennis is an aerobic exercise good for your body'
     tableTennisDetails.style.textAlign = 'center'
 
@@ -110,6 +108,14 @@ tableTennis.addEventListener('click', ()=>{
     else{
         tableTennisDetails.style.display = 'none'
     }
+}
+tableTennis.addEventListener('click', ()=>{
+    tableTennisFunction();
+})
+
+let tableTennisLink = document.querySelector("a[href='#tableTennis']")
+tableTennisLink.addEventListener('click',()=>{
+    tableTennisFunction();
 })
 
 
