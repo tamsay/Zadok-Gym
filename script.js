@@ -118,5 +118,31 @@ tableTennisLink.addEventListener('click',()=>{
     tableTennisFunction();
 })
 
+let lawntennisDetails = document.createElement('div')
+    lawntennisDetails.className = 'detailsDiv'
+    lawntennisDetails.style.display = 'none'
+
+let lawnTennisFunction=()=>{
+    lawntennisDetails.innerText = 'Lawn-tennis is an aerobic exercise good for your body'
+    lawntennisDetails.style.textAlign = 'center'
+
+    if(lawntennisDetails.style.display === 'none'){
+        lawntennisDetails.style.display = 'block'
+        lawnTennis.appendChild(lawntennisDetails)
+    }
+    else{
+        lawntennisDetails.style.display = 'none'
+    }
+}
+lawnTennis.addEventListener('click', ()=>{
+    lawnTennisFunction();
+})
+
+let lawnTennisLink = document.querySelector("a[href='#lawnTennis']")
+lawnTennisLink.addEventListener('click',()=>{
+    lawnTennisFunction();
+})
+
+
 
 
