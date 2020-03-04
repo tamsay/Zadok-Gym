@@ -46,8 +46,8 @@ let danceDetails = document.createElement('div')
     danceDetails.className = 'detailsDiv'
     danceDetails.style.display = 'none'
 
-let danceFunction =()=>{
-        danceDetails.innerText = 'Dance is an aerobic exercise good for your body'
+let danceFunction =(text)=>{
+        danceDetails.innerText = `Dance is an aerobic exercise good for your body, ${text}`
         danceDetails.style.textAlign = 'center'
     
         if(danceDetails.style.display === 'none'){
@@ -59,14 +59,52 @@ let danceFunction =()=>{
         } 
 };
 
-dance.addEventListener('click', ()=>{
-    danceFunction()
-});
+// dance.addEventListener('click', ()=>{
+//     danceFunction()
+// });
 
-let danceLink = document.querySelector("a[href='#dance']")
-danceLink.addEventListener('click',()=>{
-    danceFunction();
+// let danceLink = document.querySelector("a[href='#dance']")
+// danceLink.addEventListener('click',()=>{
+//     danceFunction();
+// })
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(response=> response.json())
+.then(data=>{
+    // danceFunction(data.title)
+    // console.log(data[0].name)
+    // let name = data[0].name;
+    
+    // dance.addEventListener('click', ()=>{
+    //     danceFunction(`${data[0].company.name}`)
+    // });
+
+    // let danceLink = document.querySelector("a[href='#dance']")
+    // danceLink.addEventListener('click',()=>{
+    //     danceFunction(name);
+    // });
 })
+.catch((error)=> {
+    console.log(error);
+  });  
+
+let awaitFunc = async ()=>{
+   let response = await fetch('https://swapi.co/api/people/')
+    let data = await response.json();
+    let name = data.results[5].name;
+    
+    dance.addEventListener('click', ()=>{
+        danceFunction(`${data.results[0].name}`)
+    });
+
+    let danceLink = document.querySelector("a[href='#dance']")
+    danceLink.addEventListener('click',()=>{
+        danceFunction(name);
+    });
+}
+awaitFunc();
+
+
 
 let badmintonDetails = document.createElement('div')
     badmintonDetails.className = 'detailsDiv'
