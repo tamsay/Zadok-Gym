@@ -78,3 +78,8 @@ footer > p{
     border-radius: 0px 10px 0px 0px;
     
 }
+#search{
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(217, 233, 243);
+}
