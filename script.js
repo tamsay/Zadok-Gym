@@ -11,6 +11,31 @@ let boxing = document.querySelector('#boxing');
 let basketball = document.querySelector('#basketball');
 let cycling = document.querySelector('#cycling') ;
 let heading = document.querySelector('#home');
+let sportTotalHeader = document.querySelector('#sportTotalHeader')
+let sportTotalSpan = document.querySelector('#sportTotalSpan');
+let body = document.querySelector('body');
+
+let speed = 10;
+let totalSport = sportList.length;
+
+
+let countFunc=()=>{
+    let value = +sportTotalSpan.innerText;
+
+    let count = totalSport/speed;
+
+    if(value < totalSport){
+        sportTotalSpan.innerText = Math.ceil(count + value);
+        setTimeout(countFunc, 100);
+    }
+    else{
+        sportTotalSpan.innerText = totalSport;
+    } 
+}
+countFunc();
+
+
+
 
 let createSportGrid =(array)=>{
     for(x=0; x < array.length; x++){
@@ -39,8 +64,12 @@ let displaySport=()=>{
         }
     })
     createSportGrid(filteredArray);
+    
 }
-search.addEventListener('input' , displaySport)
+search.addEventListener('input' , ()=>{
+    displaySport();
+})
+
 
 let danceDetails = document.createElement('div')
     danceDetails.className = 'detailsDiv'
