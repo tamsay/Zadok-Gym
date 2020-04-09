@@ -14,10 +14,26 @@ let heading = document.querySelector('#home');
 let sportTotalHeader = document.querySelector('#sportTotalHeader')
 let sportTotalSpan = document.querySelector('#sportTotalSpan');
 let body = document.querySelector('body');
-
+let testingBtn = document.querySelector('#testingDiv');
+let imageInputDiv = document.querySelector('#imageInputDiv')
+let testing = document.querySelector('#testing');
 let speed = 10;
 let totalSport = sportList.length;
 
+
+
+let testingImg = document.createElement('img');
+testingBtn.addEventListener('click',()=>{
+    let url = imageInputDiv.value;
+    console.log(url)
+    testingImg.setAttribute('src', `${url}`)
+    testing.appendChild(testingImg);
+    // fetch(url)
+    // .then(response => response.json)
+    // .then(data => {
+    //     console.log(data)
+    // })
+})
 
 let countFunc=()=>{
     let value = +sportTotalSpan.innerText;
