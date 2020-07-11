@@ -4,143 +4,403 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zadok Gym Agege Stadium</title>
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="particles_style.css">
+    <title>Zadok Gym</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/cardStyles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-  <div >
-    
+<body class="container-fluid">
  
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contactUs">Contact Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Categories
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#dance">Dance Aerobics</a>
-                        <a class="dropdown-item" href="#badminton">Badminton</a>
-                        <a class="dropdown-item" href="#tableTennis">Table Tennis</a>
-                        <a class="dropdown-item" href="#lawnTennis">Lawn Tennis</a>
-                        <a class="dropdown-item" href="#karate">Karate</a>
-                        <a class="dropdown-item" href="#boxing">Boxing</a>
-                        <a class="dropdown-item" href="#basketball">Basketball</a>
-                        <a class="dropdown-item" href="#cycling">Cycling</a>
-                        <a class="dropdown-item" href="#gym">Gym</a>
+    <header id="navHeader">
+      <nav class="navbar navbar-expand-lg top">
 
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Others</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <input id = 'search' class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" autocomplete="off">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                  <form action="POST">
-                    <input type="button" value="Login/Register" class="btn btn-primary">
-                    <!-- <h6>Login/Register</h6> -->
+        <a href="" class="navbar-brand" ><img id = 'logo' src="images/logo.jpg" alt="logo">Zadok Gym</a>
 
-                  </form>
-                    
-                </div>
-              </nav>
-              
-    <h1 id="home">ZADOK GYM AGEGE STADIUM</h1>
-    <h2 style="color: white" id="sportTotalHeader">The Total number of sports is: <span id="sportTotalSpan">0</span></h2>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><img src="images/bars.svg" alt=""></span>
+        </button>
 
-    <div class="programme grid" id="programmeGrid">
-        <div id="dance"><p>Aerobics</p><img src="dance aerobics.jpeg"></div>
-        <div id="badminton"><p>Badminton</p><img src="badminton.jpg"></div>
-        <div id="tableTennis"><p>Table-Tennis</p><img src="table tennis.jpg"></div>
-        <div id="gym"><p>Gym</p><img src="gym.jpeg"></div>
-        <div id="lawnTennis"><p>Lawn Tennis</p><img src="tennis.jpg"></div>
-        <div id="karate"><p>Karate</p><img src="karate.jpg"></div>
-        <div id="boxing"><p>Boxing</p><img src="boxing.jpg"></div>
-        <div id="basketball"><p>Basketball</p><img src="basketball.jpg"></div>
-        <div id="cycling"><p>Cycling</p><img src="cycling.jpg"></div>
-        <div id="testing"><p>testing testing</p></div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="" class="nav-link" >Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" >Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link" >Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" >Aerobics</a>
+                <a class="dropdown-item" >Badminton</a>
+                <a class="dropdown-item" >Tennis</a>
+                <a class="dropdown-item" >Others</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="overlayHeader"></div>
+    </header>
+    
+    <section id ="welcomeCarousel" class="row"> 
+
+      <div class="col-md-2">
+        <!-- Empty Column -->
       </div>
 
-      <input placeholder="image url" id="imageInputDiv"><button id="testingDiv">LOAD TESTING DIV</button>
-      <div id="contactUs" href = "#contactUs">
-        <h2>Contact Us</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta reiciendis reprehenderit dolore nesciunt fugit vitae consectetur, sapiente, minima quis corporis sunt. Ipsa quisquam dolores fugiat beatae debitis reprehenderit ut dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <!--Carousel Wrapper-->
+      <div id="carousel-example-2" class="carousel slide carousel-fade col-md-8" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-2" data-slide-to="1"></li>
+          <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+        
+          <div class="carousel-item active">
+            <!--Mask color-->
+            <div class="view">
+              <video class="video-fluid" src="videos/zadok2.MP4" loop autoplay muted  ></video>
+            <div class="mask rgba-black-slight"></div>
+          </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Slight mask</h3>
+              <p>Third text</p>
+            </div>
+          </div>
+
+         
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+                <video class="video-fluid" src="videos/zadok3.MP4" loop autoplay muted></video>
+              <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Slight mask</h3>
+              <p>Third text</p>
+            </div>
+          </div>
+
+          <!-- <div class="carousel-item">
+            <div class="view">
+              <img class="d-block" src="images/gym3.jpg"
+                alt="Third slide">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Slight mask</h3>
+              <p>Third text</p>
+            </div>
+          </div> -->
+
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <!--Video source-->
+              <video class="video-fluid"  loop autoplay muted >
+                <source src="videos/zadok1.MP4" type="video/mp4" />
+              </video>
+              <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Slight mask</h3>
+              <p>Third text</p>
+            </div>
+            
+          </div>
+
+         
+
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      
+        <button id="workoutBtn" class="btn btn-primary">Let's Workout</button>
       </div>
+      <!--/.Carousel Wrapper-->
+
+
+      <div class="col-md-2">
+        <!-- Empty Column -->
+      </div>
+
+      <!-- <div class="overlay"></div> -->
+
+    </section>
+
+  <section id="companyProfile">
+    <h2>WHO WE ARE</h2>
+    <div class="row">
+      <div class = 'col-md-6'>
+        <img id = "introImg" src="images/profilepic.jpg" alt="introImage">
+      </div>
+      <div class = 'col-md-6 profileDesc ml10'><p><span class="text-wrapper"><span class="letters">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum dolores eius nesciunt perferendis officiis veritatis fuga placeat doloremque voluptates illo voluptate totam fugit, dolor error sunt at, suscipit blanditiis sed. Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></span></p></div>
+    </div>
+  </section>
+
+
+  <section id="categoriesSection">
+    
+    <h2>Check out our various sport categories</h2>
+
+    <div class="content-wrapper row">
+  
+      <div class="col-md-4">
+        <div class="news-card">
+        <a  class="news-card__card-link"></a>
+        <img src="images/badminton.jpg" alt="" class="news-card__image">
+
+
+        <div class="news-card__text-wrapper">
+          <h3 class="news-card__title">Badminton</h3>
+          <div class="news-card__post-date">Jan 29, 2018</div>
+          <div class="news-card__details-wrapper">
+            <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+            <a  class="news-card__read-more">View More <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-md-4">
+        <div class="news-card">
+          <a class="news-card__card-link"></a>
+          <img src="images/boxing.jpg" alt="" class="news-card__image">
+  
+
+          <div class="news-card__text-wrapper">
+            <h3 class="news-card__title">Boxing</h3>
+            <div class="news-card__post-date">Jan 29, 2018</div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam obcaecati ex natus nulla rem sequi laborum quod fugit&hellip;</p>
+              <a  class="news-card__read-more">View More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="news-card">
+          <a  class="news-card__card-link"></a>
+          <img src="images/tennis.jpg" alt="" class="news-card__image">
+  
+
+          <div class="news-card__text-wrapper">
+            <h3 class="news-card__title">Tennis</h3>
+            <div class="news-card__post-date">Jan 29, 2018</div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae&hellip;</p>
+              <a  class="news-card__read-more">View More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="news-card">
+          <a  class="news-card__card-link"></a>
+          <img src="images/karate2.jpg" alt="" class="news-card__image">
+  
+
+          <div class="news-card__text-wrapper">
+            <h3 class="news-card__title">Karate</h3>
+            <div class="news-card__post-date">Jan 29, 2018</div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
+              <a  class="news-card__read-more">View More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="news-card">
+          <a  class="news-card__card-link"></a>
+          <img src="images/basketball.jpg" alt="" class="news-card__image">
+  
+
+          <div class="news-card__text-wrapper">
+            <h3 class="news-card__title">Basketball</h3>
+            <div class="news-card__post-date">Jan 29, 2018</div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio&hellip;</p>
+              <a  class="news-card__read-more">View More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="news-card">
+          <a  class="news-card__card-link"></a>
+          <img src="images/aerobics.jpg" alt="" class="news-card__image">
+  
+
+          <div class="news-card__text-wrapper">
+            <h3 class="news-card__title">Aerobics</h3>
+            <div class="news-card__post-date">Jan 29, 2018</div>
+            <div class="news-card__details-wrapper">
+              <p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia.</p>
+              <a  class="news-card__read-more">View More <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+  </section>
+
+  <section id="membershipSection">
+    <h2>Membership Plans</h2>
+
+    <div class="card-deck">
+
+      <div class="wrapper">
+      <div class="card">
+        <div class="card-body text-center">
+          <h3>Regular</h3>
+          <img src="https://uploads-ssl.webflow.com/5d1dfaf3fdd1ef7aa068c605/5d249fd92758aea11a3619cb_Journey_London_Membership_Icons_Flex2.svg" width="100" alt="">
+          <div class="membership_price"><span class="text-span">£ 49.99</span> / month</div>
+          <p class="card-text">Features</p>
+          <ul>
+            <li>feature 1</li>
+            <li>feature 2</li>
+            <li>feature 3</li>
+          </ul>
+          <button class = "btn" type="submit">Register</button>
+        </div>
+      </div>
+      </div>
+
+      <div class="wrapper">
+      <div class="card">
+        <div class="card-body text-center">
+          <h3>Premium</h3>
+          <img src="https://uploads-ssl.webflow.com/5d1dfaf3fdd1ef7aa068c605/5d24671b60878d89eb577633_Journey_London_Membership_Icons_AA1.svg" width="100" alt="">
+          <div class="membership_price"><span class="text-span">£ 99.99</span> / month</div>
+          <p class="card-text">Features</p>
+          <ul>
+            <li>feature 1</li>
+            <li>feature 2</li>
+            <li>feature 3</li>
+          </ul>
+          <button class = "btn" type="submit">Register</button>
+        </div>
+        </div>
+      </div>
+      <div class="wrapper">
+      <div class="card">
+        <div class="card-body text-center">
+          <h3>Platinum</h3>
+          <img src="https://uploads-ssl.webflow.com/5d1dfaf3fdd1ef7aa068c605/5d249fa33c6cae50d209667d_Journey_London_Membership_Icons_OP3.svg" width="100" alt="">
+          <div class="membership_price"><span class="text-span">£ 199.99</span> / month</div>
+          <p class="card-text">Features</p>
+          <ul>
+            <li>feature 1</li>
+            <li>feature 2</li>
+            <li>feature 3</li>
+          </ul>
+          
+          <button class = "btn" type="submit">Register</button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </section>
+
 
   
-    <!-- <form>
-        First Name: <input type="text" name="firstName" ><br>
-        Surname: <input type="text"><br>
-        Age: <input type="number" ><br>
-        Email: <input type="email" ><br>
-        Password: <input type="password" ><br>
-        
-        Experience Level:<br> 
-        <input type="radio" name="experienceLevel" value="Beginner">Beginner
-        <input type="radio" name="experienceLevel" value="Intermediate">Intermediate
-        <input type="radio" name="experienceLevel" value="Professional">Professional<br>
 
-        Favorite Player (Male): <br>
-        <input type="checkbox" name="favoritePlayerMale" value="Kento Momota">Kento Momota
-        <input type="checkbox" name="favoritePlayerMale" value="Lee Chong Wei">Lee Chong Wei
-        <input type="checkbox" name="favoritePlayerMale" value="Lin Dan">Lin Dan
-        <input type="checkbox" name="favoritePlayerMale" value="Jonathan Christe">Jonathan Christe
+  <section id="teamSection">
+    <h2>MEET THE TEAM</h2>
+  
+    <div class="card-deck">
 
-        Favorite Player (Female): <br>
-        <select name="favoritePlayerFemale">
-            <option value="Carolina Marin">Carolina Marin</option>
-            <option value="Tai Yi">Tai Yi</option>
-            <option value="Yamaguchi">Yamaguchi</option>
-        </select>
-
-        <textarea">
-
-        <br><input type="submit" class="btn btn-primary"><br>
-        <input type="reset" class="btn btn-danger"><br>
-        <input type="button" value="Create Account" class="btn btn-dark">
-
-    </form> -->
-    <footer>
-      <p>Designed by tlonge<br>080123456789</p>
-
-      <div id="socialMedia">
-        <a href="http://www.twitter.com" target="_blank"><img class = 'icon' src="twitter.svg" alt="twitter"></a>
-        <a href="http://www.facebook.com" target="_blank"><img class = 'icon' src="facebook.svg" alt="facebook"></a>
-        <a href="http://www.instagram.com" target="_blank"><img class = 'icon' src="instagram.svg" alt="instagram"></a>
+      <div class="card">
+        <img class="card-img-top img-fluid" src="images/instructors.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Instructor</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top img-fluid" src="images/instructors.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Instructor</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top img-fluid" src="images/instructors.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Instructor</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top img-fluid" src="images/instructors.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Instructor</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
       </div>
 
-      <a href="#home" ><img class = 'icon' src="arrow-up.svg" alt="move to top"></a>
+
+ 
+    </div>
+  </section>
+  
+    <footer class="footer">
+
+      <div class="gymInfo">
+        <div>
+          <p>Agege Stadium Lagos</p>
+        <p>zadok@gmail.com</p>
+        <p>08012345678</p>
+        </div>
+        
+        <div id="socialMedia">
+          <a href="http://www.twitter.com" target="_blank"><img class = 'icon' src="images/twitter.svg" alt="twitter"></a>
+          <a href="http://www.facebook.com" target="_blank"><img class = 'icon' src="images/facebook.svg" alt="facebook"></a>
+          <a href="http://www.instagram.com" target="_blank"><img class = 'icon' src="images/instagram.svg" alt="instagram"></a>
+        </div>
+  
+        <a href="#navHeader" ><img class = 'icon' src="images/arrow-up.svg" alt="move to top"></a>  
+      </div>
+      
+      <p class="devInfo">Designed by tlonge: 08037586047</p>
+
 
     </footer>
           
-</div>
-          <script src="jquery-3.4.1.js"></script>
-          <script src="bootstrap.bundle.min.js"></script>
-          <script src="script.js"></script>
-          <script src="particles.js"></script>
-          <script src="app.js"></script>
-          
-          
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/anime.min.js"></script>
+
+    <script src="js/script.js"></script>        
 
 </body>
 </html>
+
+
