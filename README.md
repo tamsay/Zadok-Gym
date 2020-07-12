@@ -8,7 +8,15 @@ I used a dark themed design and used video carousel at the top segment of the si
 
 ## Screenshots
 
+<img src="desktop_before.png" alt="desktop_before" width="320"/>
+<img src="mobile_before.png" alt="mobile_before" width="320"/>
 
+Former Design
+
+<img src="desktop_after.png" alt="desktop_after" width = "160"/>
+<img src="mobile_after.png" alt="mobile_after" width = "160"/>
+
+Current Design
 
 ## Live Demo
 
