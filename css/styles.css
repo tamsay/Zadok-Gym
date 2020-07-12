@@ -146,12 +146,17 @@ body{
     border-radius: 10px 0px 0px 10px;
 }
 #companyProfile p{
-    padding: 20px;
+    padding: 0px 10px;
     margin: 0px;
     font-size: 1.5em;
     font-family: Cambria, Cochin, serif, Helvetica, sans-serif;
     font-weight: 500;
 
+}
+@media all and (min-width: 768px) and (max-width: 991px){
+    #companyProfile p{
+        font-size: 1.125em;
+    }
 }
 #companyProfile .row .col-md-6{
     padding: 0px;
@@ -312,10 +317,19 @@ footer .gymInfo{
   
   .ml10 .letter {
     display: inline-block;
-    line-height: 1em;
+    /* line-height: 0.001em; */
+    /* font-size: 0.75em; */
+    /* margin: 0px 5px; */
+    
   }
 
+
 @media all and (max-width: 575px){
+    .ml10 .letter {
+        /* display: inline-block; */
+        line-height: 0.1em !important;
+        font-size: 0.75em;
+      }
     footer .gymInfo{
         width: 100%;
         display: flex;
@@ -343,7 +357,7 @@ footer .gymInfo{
         background-color: #171E24;
     }
     #welcomeCarousel .carousel-item video{
-        width: 480px;
+        width: 360px;
         padding-top: 3.5em;
     }
     body{

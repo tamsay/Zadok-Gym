@@ -29,7 +29,7 @@
     -moz-transform: translate3d(0, 0, 0);
   }
   
-  @media (min-width: 900px) {
+  @media (min-width: 20px) {
   
   .news-card {
       /* height: 20rem */
@@ -107,7 +107,7 @@
       transition: max-height 2.5s ease, opacity 1s ease;
     }
   
-  @media (min-width: 900px) {
+  @media (min-width: 20px) {
       .news-card:hover .news-card__details-wrapper {
         max-height: 20rem;
         width: 100%;
